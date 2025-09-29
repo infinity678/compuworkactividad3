@@ -1,61 +1,50 @@
-# compuworkactividad3
-# 📌 Proyecto CompuWorkApp  
+# 📌 Proyecto CompuWork
 
-Este proyecto fue desarrollado como parte del aprendizaje en **Java**, aplicando los principios de **Programación Orientada a Objetos (POO)** y el uso de **JavaFX** para la interfaz gráfica.  
-
----
-
-## ✨ Objetivos del Proyecto  
-- Diseñar un sistema para la **gestión de empleados** (permanentes y temporales).  
-- Implementar **herencia y polimorfismo** en Java.  
-- Organizar la lógica en clases separadas y cohesionadas.  
-- Incorporar **JavaFX** para ofrecer una interfaz sencilla e interactiva.  
-- Realizar **pruebas unitarias** para validar el correcto funcionamiento.  
+Este repositorio contiene el desarrollo de la **Actividad 1** en Java, que incluye modelado con diagramas UML, implementación orientada a objetos, integración de gestores y pruebas unitarias.
 
 ---
 
-## 🏗️ Estructura del Proyecto  
+## 📊 Diagramas del Proyecto
 
-📂 **CompuWorkApp**  
-- `Main.java` → Punto de entrada de la aplicación.  
-- `CompuWorkApp.java` → Configuración de la interfaz con **JavaFX**.  
-- `EmpleadoPermanente.java` → Clase que modela a los empleados con contrato fijo.  
-- `EmpleadoTemporal.java` → Clase que modela a los empleados por tiempo definido.  
-- `GestorEmpleados.java` → Gestiona la lista de empleados.  
-- `GestorDepartamentos.java` → Administra los departamentos disponibles.  
+### 🔹 Diagrama de Casos de Uso
+![Casos de Uso](https://github.com/user-attachments/assets/0be76cf6-3af6-4a0b-9587-e046fe7d849a)
 
----
+### 🔹 Diagrama de Clases
+![Clases](https://github.com/user-attachments/assets/d23dd47c-d17d-4f41-befe-19d7140eaf2c)
 
-## 🖥️ Tecnologías Utilizadas  
-- **Java 17**  
-- **JavaFX** (interfaz gráfica)  
-- **JUnit** (pruebas unitarias)  
-- **Git & GitHub** (control de versiones)  
+### 🔹 Diagrama RAM
+![RAM](https://github.com/user-attachments/assets/18ab31fd-de04-4b18-ad28-028e625d6067)
 
 ---
 
-## 📊 Ejemplo de Funcionamiento  
+## 📖 Documentación del Proceso
 
-1. El sistema permite **registrar empleados permanentes y temporales**.  
-2. Cada empleado pertenece a un **departamento**.  
-3. Desde la interfaz gráfica se pueden **visualizar y gestionar los empleados**.  
+El proyecto **CompuWork** se desarrolló en varias etapas:
+
+1. **Modelado inicial**  
+   - Creación de diagramas UML (casos de uso, clases y RAM).  
+   - Definición de entidades: `Empleado`, `EmpleadoPermanente`, `EmpleadoTemporal`, `Departamento`.  
+
+2. **Implementación en Java**  
+   - Uso de POO (herencia y polimorfismo).  
+   - Gestión de empleados mediante `GestorEmpleados`.  
+   - Gestión de departamentos mediante `GestorDepartamentos`.  
+   - Aplicación principal en `CompuWorkApp`.  
+
+3. **Integración**  
+   - Comunicación entre gestores a través de listas en memoria (`ArrayList`).  
+   - Interfaz inicial por consola con opción de enlazar a **JavaFX** (para futura GUI).  
+
+4. **Pruebas**  
+   - Pruebas unitarias con **JUnit 5** para validar empleados, departamentos e integración.  
+   - Casos probados: creación, normalización de desempeño, asignación a departamentos, cálculo de promedios.  
+   - Flujo manual probado en consola.  
 
 ---
 
-## ✅ Pruebas Unitarias  
+## 🚀 Ejecución
 
-Se implementaron pruebas con **JUnit** para validar:  
-- Creación de empleados permanentes y temporales.  
-- Cálculo de salarios.  
-- Gestión de departamentos.  
-- Correcta interacción entre clases.  
-
-Ejemplo de prueba:  
-
-```java
-@Test
-public void testEmpleadoTemporal() {
-    EmpleadoTemporal emp = new EmpleadoTemporal("Ana", 25, 1200, 6);
-    assertEquals("Ana", emp.getNombre());
-    assertEquals(1200, emp.getSalario());
-}
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/usuario/compuwork.git
+   cd compuwork
