@@ -33,6 +33,19 @@ Este proyecto fue desarrollado como parte del aprendizaje en **Java**, aplicando
 
 ---
 
+## 📊 Diagramas del Sistema  
+
+### 📌 Diagrama de Clases
+![Diagrama de Clases](URL_DE_TU_IMAGEN_1)
+
+### 📌 Diagrama de Casos de Uso
+![Diagrama de Casos de Uso](URL_DE_TU_IMAGEN_2)
+
+### 📌 Diagrama de Actividad
+![Diagrama de Actividad](URL_DE_TU_IMAGEN_3)
+
+---
+
 ## 📊 Ejemplo de Funcionamiento  
 
 1. El sistema permite **registrar empleados permanentes y temporales**.  
@@ -54,7 +67,8 @@ Ejemplo de prueba:
 ```java
 @Test
 public void testEmpleadoTemporal() {
-    EmpleadoTemporal emp = new EmpleadoTemporal("Ana", 25, 1200, 6);
+    EmpleadoTemporal emp = new EmpleadoTemporal("Ana", 25, 6, 8);
     assertEquals("Ana", emp.getNombre());
-    assertEquals(1200, emp.getSalario());
+    assertEquals(6, emp.getDuracionContrato());
+    assertEquals(8, emp.getDesempeno());
 }
